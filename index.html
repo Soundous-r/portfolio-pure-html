@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <!-- ajouter le titre et l'icone de la page  -->
     <link rel="shortcut icon" href="./assets/cover.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Van Gogh Portfolio</title>
 </head>
 <body>
-    <header>
-        <!-- ajouter le logo  -->
-           <center> <img src="./assets/logo.png" height="140px" width="35%" alt="logo" ></center> 
+    <header>  
          <!-- création de la barre de navigation -->
-
-         <nav>
-            <ul>
+         <img src="./assets/cover.jpeg" alt="logo" class="logo">
+         <nav class="navBar">
+            <ul class="list">
               <li><a href="index.html">Home</a></li>  
                <li><a href="#about">About</a></li>
                <li><a href="#gallery">Gallery</a></li>
@@ -23,72 +22,77 @@
             </ul>
          </nav>
     </header>
-    <main>
-       <center><h1><i>The Art of Solitude: Exploring Vincent van Gogh’s World</i></h1>
-       <img src="./assets/eyes.jpeg" alt="">
-    </center> 
-    <!-- créér la partie about  -->
-    <section id="about">
-        <h2><i>About</i></h2>
-        <p> Vincent van Gogh (1853–1890) was a Dutch Post-Impressionist painter whose expressive use of color and dramatic brushwork have made him one of the most influential figures in the history of Western art. Despite facing personal struggles and only achieving limited recognition during his lifetime, van Gogh's art has since become iconic, capturing raw emotion, human struggle, and the beauty of the natural world.
 
-            Van Gogh's work is characterized by vibrant, thick brushstrokes and a bold use of color, often reflecting his inner turmoil, his quest for meaning, and his deep connection with nature. His iconic pieces, such as Starry Night, Sunflowers, and The Bedroom, remain timeless symbols of artistic innovation and emotional depth. His exploration of themes like isolation, mental health, and the search for purpose resonates with audiences across generations.
-            
-            This portfolio celebrates the enduring legacy of Vincent van Gogh, offering a glimpse into the powerful emotional landscape that defined his art. Each piece captures not only the world he saw, but the world he felt—a world where color, light, and form transcended the ordinary, leaving an indelible mark on the art world.</p>
+    <main>
+      
+    <!-- créér la partie about  -->
+    <section id="about" class="about">
+    <div class="intro">
+        <h2><i>The Art of Solitude: Exploring Vincent van Gogh’s World</i></h2>
+        <p> Vincent van Gogh was a Dutch Post-Impressionist painter whose expressive use of color and dramatic brushwork have made him one of the most influential figures in the history of Western art. Despite facing personal struggles and only achieving limited recognition during his lifetime, van Gogh's art has since become iconic, capturing raw emotion, human struggle, and the beauty of the natural world.
+
+           </p></div>
+           <img src="./assets/about.jpeg" alt="photo de van gogh">
             </section>
-            <hr><hr>
-      <!-- créationde la partie gallery -->
-      <section id="gallery">
+           
+      <!-- création de la partie gallery -->
+      <section id="gallery" class="gallery">
          <h2><i>Gallery</i></h2>
          <!-- starry night part -->
-         <center><img src="./assets/starry night.jpeg" alt="starry night" width="30%"  height="400px">
-        <h3><i>Starry night</i> </h3></center>
-        <center><p> most famous painting, Starry Night depicts a swirling night sky over a quiet town. The intense blues and yellows reflect the emotional turbulence of van Gogh’s mind, while the peaceful village below contrasts with the chaos of the heavens above.</p></center> <br> <hr> <br>
+         <div class="cards">
+         <div class="card">
+         <img src="./assets/starry night.jpeg" alt="starry night" width="30%"  height="400px">
+        <h3><i>Starry night</i> </h3>
+      <p> most famous painting, Starry Night depicts a swirling night sky over a quiet town. The intense blues and yellows reflect the emotional turbulence of van Gogh’s mind, while the peaceful village below contrasts with the chaos of the heavens above.</p></div>
 
        <!-- sunflower part -->
-       <center><img src="./assets/sunflower.jpeg" alt="sunflowers" width="30%"  height="450px">
-        <h3><i>Sunflowers</i> </h3></center>
-        <center><p> The vibrant Sunflowers series is a celebration of color and life. Each painting, filled with rich yellows and oranges, captures the energy and fleeting beauty of nature, showcasing van Gogh’s ability to transform everyday objects into powerful symbols of vitality.</p></center> <br> <hr> <br>
+       <div class="card">
+     <img src="./assets/sunflower.jpeg" alt="sunflowers" width="30%"  height="450px">
+        <h3><i>Sunflowers</i> </h3>
+     <p> The vibrant Sunflowers series is a celebration of color and life. Each painting, filled with rich yellows and oranges, captures the energy and fleeting beauty of nature, showcasing van Gogh’s ability to transform everyday objects into powerful symbols of vitality.</p></div> 
          
         <!-- the bedroom part -->
-        <center><img src="./assets/bedroom.jpeg" alt="bedroom" width="30%"  height="450px">
-            <h3><i>Bedroom</i> </h3></center>
-            <center><p> In The Bedroom, van Gogh's simple room is rendered with bold colors and angular lines, conveying a sense of comfort yet solitude. The piece reflects van Gogh’s desire for peace and stability amid his tumultuous personal life.</p></center> <br> <hr><br>
+        <div class="card">
+       <img src="./assets/bedroom.jpeg" alt="bedroom" width="30%"  height="450px">
+            <h3><i>Bedroom</i> </h3>
+            <p> In The Bedroom, van Gogh's simple room is rendered with bold colors and angular lines, conveying a sense of comfort yet solitude. The piece reflects van Gogh’s desire for peace and stability amid his tumultuous personal life.</p></div>
         <!-- the café terrace at night part -->
-        <center><img src="./assets/cafe.jpeg" alt="bedroom" width="30%"  height="450px">
-            <h3><i>The café terrace at night</i> </h3></center>
-            <center><p> In this striking work, van Gogh presents a night scene of a bustling café under a deep blue sky. The warmth of the café contrasts with the cool night, symbolizing a tension between comfort and the vast, indifferent universe.</p></center> 
+        <div class="card">
+        <img src="./assets/cafe.jpeg" alt="bedroom" width="30%"  height="450px">
+            <h3><i>The café terrace at night</i> </h3>
+         <p> In this striking work, van Gogh presents a night scene of a bustling café under a deep blue sky. The warmth of the café contrasts with the cool night, symbolizing a tension between comfort and the vast, indifferent universe.</p></div></div>
       </section>
-      <br><hr><hr>
-      <section id="resume">
+      <!-- resume part  -->
+      <section id="resume" class="resume">
           <h2><i>Resume</i></h2>
-          <center><iframe width="700" height="315" src="https://www.youtube.com/embed/z8VtZGnL4Ps?si=JY2VGsP2fVxhl8TH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center> 
+          <iframe width="700" height="315" src="https://www.youtube.com/embed/z8VtZGnL4Ps?si=JY2VGsP2fVxhl8TH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-        <br><hr><hr>
+       
         <!-- contact part  -->
-        <section id="contact"></section>
-        <form id="contact">
+        <section id="contact" class="contact">
             <h2><i>Contact</i></h2>
+        <form id="contact">
             <label for="name"><i>Name :</i></label>
             <input type="text" id="name" required placeholder="Enter your name">
-            <br><br>
+          
             <label for="email"><i>Email :</i></label>
             <input type="email" id="email" required placeholder="Enter your email">
-            <br><br>
+         
             <label for="phone"><i>Phone :</i></label>
             <input type="tel" id="name" required placeholder="Enter your number">
-            <br><br>
+          
             <span><i>Are you a painter ? </i></span>
             <select  id="painter">
                 <option value="yes">yes</option>
                 <option value="no">no</option>
     
             </select>
-            <br><br>
+          
             <input type="submit" value="Submit">
         </form>
+    </section>
     </main>
-    <br><hr><hr>
+   
     <footer>
         <center><p> © 2021 Van Gogh Portfolio. All rights reserved.</p></center>
     </footer>
